@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- <style type="text/css">
+    	.sma{
+    		margin: auto;
+    		height: 300px;
+			width: 300px;
+			margin-top: 180px;
+    	}
+    	input[type=text], select {
+		  width: 100%;
+		  padding: 12px 20px;
+		  margin: 8px 0;
+		  display: inline-block;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  box-sizing: border-box;
+		}
+		input[type=password], select {
+		  width: 100%;
+		  padding: 12px 20px;
+		  margin: 8px 0;
+		  display: inline-block;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  box-sizing: border-box;
+		}
+
+		input[type=submit] {
+		  width: 100%;
+		  background-color: #4CAF50;
+		  color: white;
+		  padding: 14px 20px;
+		  margin: 8px 0;
+		  border: none;
+		  border-radius: 4px;
+		  cursor: pointer;
+		}
+    </style> -->
+    <title>LOGIN</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+	{% if error %}
+	<h4>{{ error }}</h4>
+	{% endif %}
+<form class="box" action="/" method="POST">
+		<h1>LOGIN</h1>
+		<input type="text" name="u" autocomplete="off" placeholder="Username." required="">
+		<input type="password" name="p" autocomplete="off"placeholder="Password" required="">
+		<input type="submit" name="login" value="LOGIN"><button class="button69" onclick="window.location.href ='/daftar';">REGISTRASI</button>
+	</form>
+
+</body>
+<!-- <script type="text/javascript">
+	function validasi(){
+		var username = document.getElementById('username').value;
+		var password = document.getElementById('password').value;
+		if(username !="" && password!=""){
+			return true;
+		} else {
+			alert('Username dan Password Harus Diisi!');
+			return false;
+		}
+	}
+</script> -->
+</html>
